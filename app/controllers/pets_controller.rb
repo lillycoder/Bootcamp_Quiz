@@ -1,6 +1,6 @@
 class PetsController < ApplicationController
   def index
-    @pet = Pet.first
+    @pet = Pet.last
   end
 
   def new
@@ -8,7 +8,7 @@ class PetsController < ApplicationController
   end
 
   def create
-    Pet.create(pet_params)
+    Pet.create(pet_params)  
     redirect_to root_path
   end
 
