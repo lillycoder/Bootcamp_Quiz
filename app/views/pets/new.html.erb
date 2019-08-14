@@ -1,0 +1,9 @@
+<h1>Enter Your Pet Here</h1>
+<%= simple_form_for @pet do |f| %>
+  <%= f.input :name %>
+  <%= f.input :age %>
+  <%= f.input :city %>
+  <%= f.submit 'Create' %>
+<% end %>
+
+<%= link_to 'return to the main page', root_path %>
